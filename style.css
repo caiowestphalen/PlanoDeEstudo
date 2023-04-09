@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito";
+}
+
+body{
+    background: url(img/fundoPagina.png) repeat-x fixed;
+    background-repeat: no-repeat;
+    background-size: cover;/* 
+    overflow-x: hidden; */
+}
+
+.planejamento{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #3591a7;
+}
+
+.topo{
+    text-align: center;
+    padding: 10px;
+}
+
+/*tabela*/
+.conteudoTabela{
+    margin: 0px auto;
+    font-family: "Nunito";
+}
+.logo{
+    background-color: #ffffff;
+}
+#logoTopoCompleto{
+    text-align: center;
+    width: 100%;
+}
+.disciplina, .diaSemana, .Total{
+    background-color: #bec9c9c4;
+    border: #BFC8C5 2px solid;
+    color: #474646;
+    padding: 2px;
+}
+
+td{
+    background-color: #ffffff;
+    border: #BFC8C5 2px solid;
+    font-family: "Nunito";
+}
+
+.conteudoDisciplina{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Nunito";
+}
+
+.nomeDisciplina{
+    height: 85px;
+    min-width: 100%;
+    max-width: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: #232323;
+    border: #ffffff;
+    font-family: "Nunito";
+}
+
+.conteudoQuantidade{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Nunito";
+}
+.conteudoHora{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #232323;
+    padding: 6px;
+}
+#conteudoHoraInicio, #conteudoHoraFim{
+    font-weight: bold;
+}
+.hora{
+    display: inline-block;
+    border: #BFC8C5 1px solid;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(38%) sepia(13%) saturate(3907%) hue-rotate(8750448deg) brightness(95%) contrast(90%);
+    cursor: pointer;
+
+}
+/* input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(38%) sepia(13%) saturate(0%) hue-rotate(8750448deg) brightness(95%) contrast(90%);
+
+} */
+.conteudoTotal{
+    width: 70px;
+}
+
+.conteudoHoraTotal{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    font-family: "Nunito";
+    color: #232323;
+}
+.horaTotal{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: #ffffff;
+    font-family: "Nunito";
+}
+
+
+.conteudoNomeHorasTotais{
+    padding: 5px;
+    font-weight: bolder;
+    text-align: right;
+    color: #232323;
+    background-color: #E5E8E7;
+}
+.conteudoInputHorasTotais{
+    text-align: center;
+}
+.horasTotais{
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: #ffffff;
+}
+
+
+#conteudoBotao{
+    text-align: center;
+    margin: 5px;
+}
+.botao{
+    padding: 20px 40px;
+    margin: 0px 10px;
+    margin-top: 14px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #FE5900;
+    border: #c5803b 1px solid;
+    border-radius: 75px;
+    cursor: pointer;
+    font-family: "Nunito";
+}
+
+.botao:hover{
+    background-color: #c5803b;
+}
+
+
+
+
+
+#conteudoHoraInicio, #conteudoHoraFim{
+    max-width: 160px;
+    color: #3591a7;
+}
+.hora{
+    max-width: 80px;
+}
+@media print{
+    @page{
+        size:landscape;
+    }
+    body{
+        -webkit-print-color-adjust: exact;
+    }
+    
+    .disciplinas{
+        width: 70px;
+    }
+    #conteudoHoraInicio, #conteudoHoraFim{
+        width: 150px;
+    }
+    .hora{
+        width: 70px;
+    }
+
+    .nomeDisciplina{
+        height: 100px;
+    }
+    /* .disciplina, .diaSemana, .Total, .disciplina, .diaSemana, .Total, .conteudoNomeHorasTotais, .conteudoHora, .nomeDisciplina{
+        color: #000000;
+    } */
+    /*.conteudoDiaSemana{
+        -webkit-print-color-adjust: exact;
+    } */
+
+    
+    /* input[type="time"]::-webkit-calendar-picker-indicator{
+        display: none;
+    } */
+        
+    #conteudoBotao{
+        display: none;
+    }
+}
